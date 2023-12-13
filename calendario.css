@@ -1,4 +1,8 @@
 
-div img {
-	flex-direction: column;
-}
+  a{
+
+   height:  3rem;
+   width : 3rem;
+   background-color: #DA121A;
+   padding:100%;
+   margin:100%;}
