@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.estadio-container {
+    align-items: center;
+    width: 200rem;
+    height: 200rem;
+    display: flex;
+    justify-content: center;
+  }
+  .estadio-centrar{
+    align-items:center ;
+  }
+  /* Imagen Izquierda */
+  .image-Izquierda {
+    width: 60rem;
+    height: 60rem;
+    background-size: cover;
+    transition: background-image 0.3s ease; /* Efecto de transición suave */
+  
+    /* Establecer la imagen de fondo predeterminada */
+    background-image: url(img_Estadio/Izquierda-removebg-preview.png)
+  }
+  
+  /* Change the background image on hover */
+  .image-Izquierda:hover {
+    background-image: url('img_Estadio/Izquierda.png');
+  }
+  /* Imagen Derecha */
+  .image-Derecha {
+    width: 60rem;
+    height: 60rem;
+    background-size: cover;
+    transition: background-image 0.3s ease; 
+  
+    background-image: url(img_Estadio/Derecha_Estadio-removebg-preview.png)
+  }
+  
+  .image-Derecha:hover {
+    background-image: url(img_Estadio/Derecha.png);
+  }
+  /* Imagen Centro Arriba */
+  .image-Centro-Arriba {
+    width: 80rem;
+    height: 60rem;
+    background-size: cover;
+    transition: background-image 0.3s ease; 
+
+    background-image: url(img_Estadio/Arriba_Estadio-removebg-preview.png)
+  }
+  
+  .image-Centro-Arriba:hover {
+    background-image: url(img_Estadio/Centro_Arriba.png);
+  }
+
+
+   /* Imagen Centro Abajo */
+  .image-Centro-Abajo {
+    width: 80rem;
+    height: 60rem;
+    background-size: cover;
+    transition: background-image 0.3s ease; 
+  
+    background-image: url(img_Estadio/Abajo_Estadio-removebg-preview.png)
+  }
+  
+  .image-Centro-Abajo:hover {
+    background-image: url(img_Estadio/Centro_abajo.png);
+  }
+  /* Imagen Centro */
+
+  .image-Centro {
+    width: 100rem;
+    height: 60rem;
+    background-size: cover;
+  
+    background-image: url(img_Estadio/Centro_Estadio-removebg-preview.png)  
+  }
+  
+  
+
+  img{
+    display: block;
+  }
