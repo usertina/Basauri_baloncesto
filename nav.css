@@ -44,14 +44,14 @@ nav{background-color: rgb(0, 0, 0);
           align-items: center;  
           min-height: 10rem;  
          }
-.logo_nav img{width: 50%;
-              height: 50%;
+.logo_nav img{width: 60%;
+              height: 60%;
               rotate: 2.80;   
               border: 0.1rem solid rgb(255, 255, 255);  
               border-radius: 100%;
               padding: 0.5rem;
              }
-.menu_nav{width: 40%;
+.menu_nav{width: 50%;
           justify-content: center;
           align-items: center;
           color: white;
@@ -72,3 +72,21 @@ nav{background-color: rgb(0, 0, 0);
                        width: 100%;
                        gap: 1rem;
                       }
+
+@media screen and (max-width: 1000px){
+    .redes_sociales_nav{display: none;}
+    .menu_nav{width: 80%;}
+    
+}
+
+@media screen and (max-width: 650px) {
+    nav{justify-content: center;
+        }
+    .menu_nav ul{display: none;}
+    .logo_nav{justify-content: center;}
+    .logo_nav img{justify-content: center;
+                  width: 100%;
+                  height: 100%;
+                  margin: auto;}
+    
+}
