@@ -1,0 +1,42 @@
+main{display: column;
+    justify-content: center;
+    }
+
+main img{width: 25rem;
+    height: 20rem;
+    border: 0.3rem solid black;
+    padding: 0.2rem;
+        }
+.seleccion_profesional{background-color: black;
+            color: white;
+            width: 10%;
+            border: 0.1rem solid red;
+            padding: 0.1rem;
+            margin-top: 3rem;
+           }
+.entrenadores_img{display: flex;
+       justify-content: space-around;
+       margin-top: 3rem;
+      }
+.etiqueta_nombres_entrenadores{ width: 100%;
+                                display:flex;
+                                justify-content: space-around;}
+
+.entrenadores{width: 10%;
+    color: white;
+    background-color: black;
+    border: 0.1rem solid red;
+    padding: 0.1rem;
+    margin-top: 0.5rem;}
+.jugadores_img{display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;}
+.etiqueta_nombres_jugadores{width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                           }
+.jugador_caja_nombre{    color: white;
+    background-color: black;
+    border: 0.1rem solid red;
+    padding: 0.1rem;
+    margin-top: 0.5rem;}
