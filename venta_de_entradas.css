@@ -1,59 +1,67 @@
 
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
 
-
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: block;
+  
+}
 .estadio-container {
+
+ 
     align-items: center;
-    width: 200rem;
-    height: 200rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 0.5rem;
+  
+
+    border: 2px solid red;
   }
-  .estadio-centrar{
-    align-items:center ;
-  }
-  /* Imagen Izquierda */
+ 
+  .centro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  } 
+
+  /* Imagen Left */
   .image-Izquierda {
-    width: 60rem;
-    height: 60rem;
+    width: 9rem;
+    height: 17rem;
     background-size: cover;
     transition: background-image 0.3s ease; /* Efecto de transición suave */
-  
+    border-radius: 5%;
     /* Establecer la imagen de fondo predeterminada */
-    background-image: url(img_Estadio/Izquierda-removebg-preview.png)
+    background-image: url(img_Estadio/Left.png)
   }
   
   /* Change the background image on hover */
   .image-Izquierda:hover {
     background-image: url('img_Estadio/Izquierda.png');
   }
-  /* Imagen Derecha */
+  /* Imagen Right */
   .image-Derecha {
-    width: 60rem;
-    height: 60rem;
+    width: 9rem;
+    height: 17rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-  
-    background-image: url(img_Estadio/Derecha_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Right.png)
   }
   
   .image-Derecha:hover {
     background-image: url(img_Estadio/Derecha.png);
   }
-  /* Imagen Centro Arriba */
+  /* Imagen Top */
   .image-Centro-Arriba {
-    width: 80rem;
-    height: 60rem;
+    width: 17rem;
+    height: 9rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-
-    background-image: url(img_Estadio/Arriba_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Top.png)
   }
   
   .image-Centro-Arriba:hover {
@@ -61,14 +69,14 @@ body {
   }
 
 
-   /* Imagen Centro Abajo */
+   /* Imagen Bottom */
   .image-Centro-Abajo {
-    width: 80rem;
-    height: 60rem;
+    width:17rem;
+    height:9rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-  
-    background-image: url(img_Estadio/Abajo_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Bottom.png)
   }
   
   .image-Centro-Abajo:hover {
@@ -77,15 +85,43 @@ body {
   /* Imagen Centro */
 
   .image-Centro {
-    width: 100rem;
-    height: 60rem;
+    width: 17rem;
+    height: 9rem;
     background-size: cover;
-  
-    background-image: url(img_Estadio/Centro_Estadio-removebg-preview.png)  
+    border-radius: 5%;
+    background-image: url(img_Estadio/Center.png)  
   }
   
   
+  #contenedorImagen {
+    margin-top: 20px;
+  }
+  
+  #imagenSeleccionada {
+    max-width: 100%;
+    max-height: 200px;
+  }
 
-  img{
-    display: block;
-  }
+  /* Estilo de las celdas de la tabla */
+#miTabla {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
+
+#miTabla th, #miTabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Cambio de color al pasar el cursor sobre las celdas */
+#miTabla tr:hover {
+  background-color: #f5f5f5;
+}
+
+section {
+  width: 50%; /* Cada sección ocupa el 50% del ancho del contenedor padre */
+  box-sizing: border-box;
+  padding: 20px;
+}
