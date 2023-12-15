@@ -5,10 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="venta_de_entradas.css">
   <title>Entradas</title>
+  <link rel="stylesheet" href="general.css">
+  <script src="https://kit.fontawesome.com/0cab5e247d.js" crossorigin="anonymous"></script>
+  
 </head>
-<body>
 
-  <div class="estadio-container estadio-centrar ">
+<body>
+<nav>
+  <div class="logo_nav">
+      <img src="logo.png" alt="">
+
+  </div>
+  <div class="menu_nav">
+      <ul>
+          <li>PLANTILLA</li>
+          <li>CALENDARIO</li>
+          <li>ENTRADAS</li>
+          <li>CONTACTO</li>
+      </ul>
+
+  </div>
+  <div class="redes_sociales_nav">
+      <ul>
+          <li><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></li>
+         
+          <li><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+         
+          <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+         
+          <li><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></li>
+        
+          <li><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>         
+      </ul>
+  </div>
+  <div class="hamburguesa_menu">
+      <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+  </div>
+
+</nav>
+
+
+  <article class="section-flexible">
+    <!-- Disposicion del Estadio-->
+<section class="section-images">
+  <div class="estadio-container ">
     <div class="image-Izquierda" ></div>
     <div class="centro">
         <div class="image-Centro-Arriba"></div>
@@ -17,7 +57,87 @@
     </div>
     <div class="image-Derecha"></div>
   </div>
-
+</section>
+<!-- Tabla-->
+<section  class="section-tabla">
   
+</section>
+<!-- Form-->
+<section class="form">
+  <table id="miTabla">
+    <thead>
+      <tr>
+        <th>Zona</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td ><label for="der">Zona Derecha</label></td>
+        <td><input id="der" type="radio" name="precio"><label for="der">$10</label></td>
+      </tr>
+      <tr>
+        <td><label for="izq">Zona Izquierda</label></td>
+        <td><input id="izq" type="radio" name="precio"><label for="izq">$10</td>
+      </tr>
+      <tr>
+        <td><label for="sup">Zona Superior</label></td>
+        <td><input id="sup" type="radio" name="precio"><label for="sup">$20</td>
+      </tr>
+      <tr>
+        <td><label for="inf">Zona Inferior</label></td>
+        <td><input id="inf" type="radio" name="precio"><label for="inf">$30</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+<form id="Form-Pago" action="#" method="get">
+  <label for="fecha"> Seleccione la fecha <input type="date"> </label>
+  <label for="tipo"> Tipo de Entradas 
+    <select name="" id="dropdown">
+      <option value="" disabled selected></option>
+      <option value="1" > VIP</option>
+      <option value="2" > Regular</option>
+    </select> </label>
+  <label for="cantidad"> Cantidad <input type="number" min="1" max="10"> </label>
+  <input id="submit" type="submit" value="Reserva el ticket">
+</form>
+
+</section>
+</article>
+  
+
+
+<footer>
+  <div class="marquee-infinite">
+      <div>
+          <span>
+              <img src="img/logo 1.png" alt="">
+              <img src="img/logo 2.png" alt="">
+              <img src="img/logo 3.png" alt="">
+              <img src="img/logo 4.png" alt="">
+              <img src="img/logo 5.png" alt="">
+          </span>
+          <span>
+              <img src="img/logo 1.png" alt="">
+              <img src="img/logo 2.png" alt="">
+              <img src="img/logo 3.png" alt="">
+              <img src="img/logo 4.png" alt="">
+              <img src="img/logo 5.png" alt="">
+          </span>
+      </div>
+  </div>
+<div class="footer-abajo">
+  <div class="footer-menu">
+      <div>INICIO</div>
+      <div>HORARIO</div>
+      <div>ENTRADAS</div>
+      <div>PLANTILLAS</div>
+      <div>TIENDA</div>
+  </div>
+  <div class="footer-logo"><img src="img/Logo black.png" alt=""></div>
+</div>
+</footer>
 </body>
 </html>

@@ -9,23 +9,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+    <script src="https://kit.fontawesome.com/0cab5e247d.js" crossorigin="anonymous"></script>
+
 </head>
 <body >
+
+    <nav>
+        <div class="logo_nav">
+            <img src="logo.png" alt="">
+
+        </div>
+        <div class="menu_nav">
+            <ul>
+                <li>PLANTILLA</li>
+                <li>CALENDARIO</li>
+                <li>ENTRADAS</li>
+                <li>CONTACTO</li>
+            </ul>
+
+        </div>
+        <div class="redes_sociales_nav">
+            <ul>
+                <li><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></li>
+               
+                <li><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+               
+                <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+               
+                <li><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></li>
+              
+                <li><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>         
+            </ul>
+        </div>
+        <div class="hamburguesa_menu">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+
+    </nav>
     
   
 <section class="container">
+
+
 <div > 
 
     <h1>Contacto</h1>
-      <form action="/enviar.php" method="post">
+
+    <form action="/enviar.php" method="post">
+
+        
         <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre"required> 
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
+
         <label for="phone"> Telefono:</label>
         <input type="text" id="phone" name="phone" required>
+
 
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
@@ -33,16 +76,65 @@
 
         <button type="submit">Enviar</button>
 
-
-
     </form>
-</div>
+
 </section>
 
-<h2> INFORMACION DE CONTACTOS</h2>
+<section class="dos">
 
+<h2> INFORMACION DE CONTACTOS</h2><br><br>
 
+<div class="informacion">
 
+    <p> Club: BSK BASAURI SASKIBALOI KLUBA</p><br>
+    <p>Dirección: https://maps.app.goo.gl/TXfmvERDzKvzwiTd9</p><br>
+    <p>Provincia: Vizcaya</p><br>
+    <p>Email: bsk.basauri@bizkaiabasket.com</p><br>
+    <p>Población: Basauri</p><br>
+    <p>Teléfono: 695788997</p><br>
+
+</div>
+
+<div class="mapa">
+
+  <img src="img/thumbnail.jpeg" alt="">
+
+</div>
+
+</section>
+<footer>
+    <div class="marquee-infinite">
+        <div>
+            <span>
+                <img src="img/logo 1.png" alt="">
+                <img src="img/logo 2.png" alt="">
+                <img src="img/logo 3.png" alt="">
+                <img src="img/logo 4.png" alt="">
+                <img src="img/logo 5.png" alt="">
+            </span>
+            <span>
+                <img src="img/logo 1.png" alt="">
+                <img src="img/logo 2.png" alt="">
+                <img src="img/logo 3.png" alt="">
+                <img src="img/logo 4.png" alt="">
+                <img src="img/logo 5.png" alt="">
+            </span>
+        </div>
+    </div>
+<div class="footer-abajo">
+    <div class="footer-menu">
+        <div>INICIO</div>
+        <div>HORARIO</div>
+        <div>ENTRADAS</div>
+        <div>PLANTILLAS</div>
+        <div>TIENDA</div>
+    </div>
+    <div class="footer-logo"><img src="img/Logo black.png" alt=""></div>
+</div>
+
+</footer>
 </body>
+
+
 
 </html>

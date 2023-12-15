@@ -1,59 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
 
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+ 
+}
+.estadio-container {
+
+ 
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  
+
     
   }
-
-
-.estadio-container {
-    align-items: center;
-    width: 200rem;
-    height: 200rem;
+ 
+  .centro{
     display: flex;
-    justify-content: center;
-  }
-  .estadio-centrar{
-    align-items:center ;
-  }
-  /* Imagen Izquierda */
+    flex-direction: column;
+    gap: 1rem;
+  } 
+
+  /* Imagen Left */
   .image-Izquierda {
-    width: 60rem;
-    height: 60rem;
+    width: 6.5rem;
+    height: 12rem;
     background-size: cover;
     transition: background-image 0.3s ease; /* Efecto de transición suave */
-  
+    border-radius: 5%;
     /* Establecer la imagen de fondo predeterminada */
-    background-image: url(img_Estadio/Izquierda-removebg-preview.png)
+    background-image: url(img_Estadio/Left.png)
   }
   
   /* Change the background image on hover */
   .image-Izquierda:hover {
     background-image: url('img_Estadio/Izquierda.png');
   }
-  /* Imagen Derecha */
+  /* Imagen Right */
   .image-Derecha {
-    width: 60rem;
-    height: 60rem;
+    width:6.5rem;
+    height:12rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-  
-    background-image: url(img_Estadio/Derecha_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Right.png)
   }
   
   .image-Derecha:hover {
     background-image: url(img_Estadio/Derecha.png);
   }
-  /* Imagen Centro Arriba */
+  /* Imagen Top */
   .image-Centro-Arriba {
-    width: 80rem;
-    height: 60rem;
+    width:12rem;
+    height: 6.5rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-
-    background-image: url(img_Estadio/Arriba_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Top.png)
   }
   
   .image-Centro-Arriba:hover {
@@ -61,14 +74,14 @@ body {
   }
 
 
-   /* Imagen Centro Abajo */
+   /* Imagen Bottom */
   .image-Centro-Abajo {
-    width: 80rem;
-    height: 60rem;
+    width:12rem;
+    height:6.5rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
-  
-    background-image: url(img_Estadio/Abajo_Estadio-removebg-preview.png)
+    border-radius: 5%;
+    background-image: url(img_Estadio/Bottom.png)
   }
   
   .image-Centro-Abajo:hover {
@@ -77,15 +90,94 @@ body {
   /* Imagen Centro */
 
   .image-Centro {
-    width: 100rem;
-    height: 60rem;
+    width: 12rem;
+    height: 6.5rem;
     background-size: cover;
-  
-    background-image: url(img_Estadio/Centro_Estadio-removebg-preview.png)  
+    border-radius: 5%;
+    background-image: url(img_Estadio/Center.png)  
   }
-  
   
 
-  img{
-    display: block;
+  /* Estilo de las celdas de la tabla */
+#miTabla {
+  background-color: var(--black);
+  color: var(--gray);
+  border-collapse: collapse;
+  max-width: 30rem;
+  min-width: 18rem;
+  width: 30vw;
+  margin: 2rem auto ;
+  border-radius: 5%;
+
+}
+
+#miTabla th, #miTabla td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+  cursor: pointer;
+ 
+}
+
+/* Cambio de color al pasar el cursor sobre las celdas */
+#miTabla tr:hover {
+  background-color:var(--red);
+}
+
+.section-flexible{
+  display: flex;
+  flex-wrap: wrap;justify-content: center;
+}
+
+
+form{
+  background-color:var(--black);
+  margin: 0 auto;
+  max-width: 30rem;
+  min-width: 18rem;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 5%;
+}
+label{
+  display: block;
+  margin: 0.5rem 0.5rem;
+  color: #ddd;
+}
+input,textarea,select{
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+  
+}
+
+/* Media-Queries */
+@media screen and (max-width: 768px) {
+  .section-images{
+    width: 50%;
   }
+  form {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .section-images{
+    width: 80%;
+  }
+  form {
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 380px) {
+  .section-images{
+    width: 100%;
+  }
+  form {
+    width: 80%;
+  }
+
+}
