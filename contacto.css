@@ -5,6 +5,8 @@ h1{
     font-size: 3rem;
 }
 
+
+
 .container {
     font-family: Arial, sans-serif;
     display: flex;
@@ -12,7 +14,7 @@ h1{
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb( 18 15 15);
+    background-color:  rgb(20, 20, 20);
 }
 
 
@@ -58,7 +60,7 @@ button:hover {
 }
 
 .dos { 
-    background-color: rgb( 18 15 15);
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 
@@ -87,10 +89,7 @@ h2 {
 
 
 @media screen and (max-width: 1000px){
-   form {width: 50%;
- }
-    
-    
+   
 }
 
 /* Media-Queries */
@@ -100,19 +99,24 @@ h2 {
 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
     form {width: 30%;
-        height: 30%; }
+        height: 30%;}
+
+    img { width: 90%;
+          height: 90%;}
     
 }
 
 @media screen and (max-width: 500px) {
-    form {width: 20%;
-            height: 20%; 
+    form {width: 30%;
+            height: 30%; 
 }
 
-    img { height: 40%;
-        width: 40%;
+p { font-size: 1.2rem;}
+
+    img { height: 75%;
+        width: 75%;
 }
 
 }
