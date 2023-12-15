@@ -2,6 +2,7 @@ main{display:flex;
      flex-direction: column;
      justify-content: center;
      width: 100%;
+     background-image:image(/img_baloncesto/cancha_baloncesto_vertical.png)
     }
 /*div de contenedor de los 2 entrenadores*/
 .plantilla_entrenador{display: flex;
@@ -37,16 +38,16 @@ main{display:flex;
                   justify-content: center; 
                   margin-top: 1rem;      
                  }
-/*div de la imagen del jugador o entrenador*/
+/*div de la imagen del jugador*/
 .imagenes_jugadores{width: 80%;
                     height: 80%;
                     border: 0.1rem solid black;
                     padding: 0.1rem;
                     justify-content: center;
                    }
-/*div de la imagen del jugador o entrenador*/
-.imagenes_entrenadores{width: 100%;
-                       height: 100%;
+/*div de la imagen del entrenador*/
+.imagenes_entrenadores{width: 60%;
+                       height: 60%;
                        border: 0.1rem solid black;
                        padding: 0.1rem;
                        justify-content: center;
