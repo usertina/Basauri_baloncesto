@@ -7,7 +7,7 @@
   <title>Entradas</title>
   <link rel="stylesheet" href="general.css">
   <script src="https://kit.fontawesome.com/0cab5e247d.js" crossorigin="anonymous"></script>
-  <script src="venta_de_entradas.js"></script>
+  
 </head>
 <nav>
   <div class="logo_nav">
@@ -43,7 +43,9 @@
 </nav>
 
 <body>
-<section>
+  <article class="section-flexible">
+    <!-- Disposicion del Estadio-->
+<section class="section-images">
   <div class="estadio-container ">
     <div class="image-Izquierda" ></div>
     <div class="centro">
@@ -55,7 +57,11 @@
   </div>
 </section>
 <!-- Tabla-->
-<section >
+<section  class="section-tabla">
+  
+</section>
+<!-- Form-->
+<section class="form">
   <table id="miTabla">
     <thead>
       <tr>
@@ -64,27 +70,40 @@
       </tr>
     </thead>
     <tbody>
-      <tr data-imagen="Left.png">
+      <tr >
         <td ><label for="der">Zona Derecha</label></td>
-        <td><input id="der" type="radio" name="precio">$10</td>
+        <td><input id="der" type="radio" name="precio"><label for="der">$10</label></td>
       </tr>
-      <tr data-imagen="imagen2.jpg">
+      <tr>
         <td><label for="izq">Zona Izquierda</label></td>
-        <td><input id="izq" type="radio" name="precio">$10</td>
+        <td><input id="izq" type="radio" name="precio"><label for="izq">$10</td>
       </tr>
-      <tr data-imagen="imagen3.jpg">
+      <tr>
         <td><label for="sup">Zona Superior</label></td>
-        <td><input id="sup" type="radio" name="precio">$20</td>
+        <td><input id="sup" type="radio" name="precio"><label for="sup">$20</td>
       </tr>
-      <tr data-imagen="imagen4.jpg">
+      <tr>
         <td><label for="inf">Zona Inferior</label></td>
-        <td><input id="inf" type="radio" name="precio">$30</td>
+        <td><input id="inf" type="radio" name="precio"><label for="inf">$30</td>
       </tr>
       
     </tbody>
   </table>
+  <fieldset>
+<form id="Form-Pago" action="#" method="get">
+  <label for="fecha"> Seleccione la fecha <input type="date"> </label>
+  <label for="tipo"> Tipo de Entradas 
+    <select name="" id="dropdown">
+      <option value="" disabled selected></option>
+      <option value="1" > VIP</option>
+      <option value="2" > Regular</option>
+    </select> </label>
+  <label for="cantidad"> Cantidad <input type="number" min="1" max="10"> </label>
+  <input id="submit" type="submit" value="Reserva el ticket">
+</form>
+</fieldset>
 </section>
-
+</article>
   
 </body>
 

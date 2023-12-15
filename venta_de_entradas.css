@@ -4,8 +4,7 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  display: block;
-  
+ 
 }
 .estadio-container {
 
@@ -17,7 +16,7 @@ body{
     gap: 0.5rem;
   
 
-    border: 2px solid red;
+    
   }
  
   .centro{
@@ -92,36 +91,51 @@ body{
     background-image: url(img_Estadio/Center.png)  
   }
   
-  
-  #contenedorImagen {
-    margin-top: 20px;
-  }
-  
-  #imagenSeleccionada {
-    max-width: 100%;
-    max-height: 200px;
-  }
 
   /* Estilo de las celdas de la tabla */
 #miTabla {
-  border: 2px solid red;
+  background-color: var(--black);
+  color: var(--gray);
   border-collapse: collapse;
+  max-width: 30rem;
+  min-width: 18rem;
+  width: 30vw;
+
 }
 
 #miTabla th, #miTabla td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 0.5rem;
   text-align: left;
   cursor: pointer;
 }
 
 /* Cambio de color al pasar el cursor sobre las celdas */
 #miTabla tr:hover {
-  background-color: #f5f5f5;
+  background-color:var(--red);
 }
 
-section {
-  width: 50%; /* Cada sección ocupa el 50% del ancho del contenedor padre */
-  box-sizing: border-box;
-  padding: 20px;
+.section-flexible{
+  display: flex;
+}
+
+
+form{
+  background-color:var(--black);
+  margin: 0 auto;
+  max-width: 30rem;
+  min-width: 18rem;
+  width: 20vw;
+  padding: 2rem;
+}
+label{
+  display: block;
+  margin: 0.5rem 0.5rem;
+  color: #ddd;
+}
+input,textarea,select{
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+  
 }
