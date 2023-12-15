@@ -1,42 +1,64 @@
-main{display: column;
-    justify-content: center;
+main{display:flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
     }
-
-main img{width: 25rem;
-    height: 20rem;
-    border: 0.3rem solid black;
-    padding: 0.2rem;
-        }
-.seleccion_profesional{background-color: black;
-            color: white;
-            width: 10%;
-            border: 0.1rem solid red;
-            padding: 0.1rem;
-            margin-top: 3rem;
-           }
-.entrenadores_img{display: flex;
-       justify-content: space-around;
-       margin-top: 3rem;
-      }
-.etiqueta_nombres_entrenadores{ width: 100%;
-                                display:flex;
-                                justify-content: space-around;}
-
-.entrenadores{width: 10%;
-    color: white;
-    background-color: black;
-    border: 0.1rem solid red;
-    padding: 0.1rem;
-    margin-top: 0.5rem;}
-.jugadores_img{display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;}
-.etiqueta_nombres_jugadores{width: 100%;
-                            display: flex;
-                            justify-content: space-around;
-                           }
-.jugador_caja_nombre{    color: white;
-    background-color: black;
-    border: 0.1rem solid red;
-    padding: 0.1rem;
-    margin-top: 0.5rem;}
+/*div de contenedor de los 2 entrenadores*/
+.plantilla_entrenador{display: flex;
+                     justify-content: space-around;
+                     width: 100%;
+                     flex-direction: row;
+                     margin-top: 3rem;
+                     }
+/*div de contenedor de todos los jugadores*/
+.plantilla_jugadores{display: flex;
+                     width: 100%;
+                     flex-wrap: wrap;
+                     justify-content: space-around;
+                     align-items: center;
+                     flex-direction: row;
+                     margin-top: 3rem;
+                     }
+/*div contenedor de imagen + nombre y posicion entrendores*/
+.plantilla_nombre_entrenadores{display: flex;
+                               width: 60%;
+                               height: 60%;
+                               flex-direction: column;
+                               align-items: center;
+                               justify-content: center; 
+                               margin-top: 1rem;
+                              }
+/*div contenedor de imagen + nombre y posicion jugadores*/
+.plantilla_nombre{display: flex;
+                  width: 30%;
+                  height: 30%;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center; 
+                  margin-top: 1rem;      
+                 }
+/*div de la imagen del jugador o entrenador*/
+.imagenes_jugadores{width: 80%;
+                    height: 80%;
+                    border: 0.1rem solid black;
+                    padding: 0.1rem;
+                    justify-content: center;
+                   }
+/*div de la imagen del jugador o entrenador*/
+.imagenes_entrenadores{width: 100%;
+                       height: 100%;
+                       border: 0.1rem solid black;
+                       padding: 0.1rem;
+                       justify-content: center;
+                      }
+/*div del nombre del jugador con posicion*/
+.nombre_posicion{width: 50%;
+                 color: white;
+                 background-color: black;
+                 /*border: 0.1rem solid red;*/
+                 padding: 0.1rem;
+                 margin-top: 0.5rem;
+                 /*display: block;*/
+                 font-size: 10rem;
+                 
+                }
