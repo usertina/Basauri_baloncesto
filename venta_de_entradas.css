@@ -16,6 +16,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 .estadio-container {
     align-items: center;
@@ -146,7 +147,7 @@ table tr:hover {
 
 form{
   background-color:var(--black);
-  margin: 3rem auto;
+  margin:10rem auto;
   max-width: 30rem;
   min-width: 18rem;
   width: 50%;

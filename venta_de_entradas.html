@@ -74,26 +74,34 @@
     <tbody>
       <tr >
         <td ><label for="der">Zona Derecha</label></td>
-        <td><input id="der" type="radio" name="precio"><label for="der">$10</label></td>
+        <td><input id="der" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="der">$10</label></td>
       </tr>
       <tr>
         <td><label for="izq">Zona Izquierda</label></td>
-        <td><input id="izq" type="radio" name="precio"><label for="izq">$10</td>
+        <td><input id="izq" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="izq">$10</td>
       </tr>
       <tr>
         <td><label for="sup">Zona Superior</label></td>
-        <td><input id="sup" type="radio" name="precio"><label for="sup">$20</td>
+        <td><input id="sup" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="sup">$20</td>
       </tr>
       <tr>
         <td><label for="inf">Zona Inferior</label></td>
-        <td><input id="inf" type="radio" name="precio"><label for="inf">$30</td>
+        <td><input id="inf" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="inf">$30</td>
       </tr>
       
     </tbody>
   </table>
   </section>
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
 </article>
-  <section> 
+  <section id="section-pago"> 
 <form id="Form-Pago" action="#" method="get">
   <label for="fecha"> Seleccione la fecha <input type="date"> </label>
   <label for="tipo"> Tipo de Entradas 
