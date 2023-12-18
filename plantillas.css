@@ -3,7 +3,7 @@ main{display:flex;
      justify-content: center;
      width: 100%;
      background-image: url(/vertical_2_prueba.png);
-     background-repeat: no-repeat;
+     background-repeat:repeat-y;
      background-size: 100%;
      margin-bottom: 5rem;
     }
@@ -66,9 +66,11 @@ main{display:flex;
                  margin-top: 0.5rem;
                  /*display: block;*/
                  font-size: 10rem;
+                 margin-bottom: 1rem;
                  
                 }
 /*Efectos de agrandacion a la hora de poner el cursor*/
+/*@media screen and (max-width: 2000px){
 .plantilla_nombre_entrenadores:hover{width: 35%;
                                       height: 35%;
                                       background-color: red;
@@ -90,12 +92,59 @@ main{display:flex;
                          transform: scale(1.2);
                          border-radius: 5%;
                          box-shadow: 0px 5px 25px grey;
-                         position: relative;
-                        
+                         position: relative;                 
                         }
-.plantilla_jugadores:hover{display: inline-flex}
+                    }*/
 
 @media screen and (max-width: 1000px){
-  
-    
+    .plantilla_nombre_entrenadores{width: 52%;}
+    .imagenes_entrenadores{width: 83%;
+                           height: 83%;}
+    .plantilla_nombre{width:50%;
+                      height: 50%;  
+                     }
+   /* .plantilla_nombre_entrenadores:hover{display: flex;
+                                         width: 40%;
+                                         height: 40%;
+                                         flex-direction: column;
+                                         align-items: center;
+                                         justify-content: center; 
+                                         margin-top: 1rem;
+                                        }
+    .plantilla_nombre:hover{display: flex;
+                            width: 27%;
+                            height: 27%;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center; 
+                            margin-top: 1rem;  
+                            margin-bottom: 3rem; 
+                            }*/
+                        }
+@media screen and (max-width: 700px){
+    .plantilla_nombre{width:70%;
+                      height: 70%
+                     }
+    .plantilla_entrenador{flex-wrap: wrap;
+                         }
+    .plantilla_nombre_entrenadores{width: 72%;
+                                   height: 72%;
+                                  }
+  /*  .plantilla_nombre_entrenadores:hover{display: flex;
+                                         width: 40%;
+                                         height: 40%;
+                                         flex-direction: column;
+                                         align-items: center;
+                                         justify-content: center; 
+                                         margin-top: 1rem;
+                                        }
+    .plantilla_nombre:hover{display: flex;
+                            width: 27%;
+                            height: 27%;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center; 
+                            margin-top: 1rem;  
+                            margin-bottom: 3rem; 
+                          }*/
 }
