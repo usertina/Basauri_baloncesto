@@ -1,3 +1,11 @@
+
+body{
+  background-image:url(https://images7.alphacoders.com/654/654785.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /*div 1*/
 .entrada_1 {
   align-items: center;
@@ -41,19 +49,31 @@
   display: flex;
   justify-content: center;
 }
+/*div 8*/
+.entrada_8 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/*imagenes de las entradas*/
+.image{width: 40rem;
+  height: 8rem;
+}
+
 /*boton home*/
 .home {
   background-color: #DA121A;
   width: 8rem; 
-  height: 10.5rem;
+  height: 8rem;
         }
 /*boton entradas*/
 .entradas {
    background-color: #DA121A;
   width: 8rem; 
-  height: 10.5rem;
+  height: 8rem;
+
         }
- /*boton que enlaza a página de venta de entradas y al home*/       
+ /*boton que enlaza a página de venta de entradas y al home y cambia la forma de cursor*/       
 input{
   background-color: #DA121A;
   color: white;
@@ -64,9 +84,14 @@ input{
 input:hover{
   background-color: darkred;
 }
-
-
-
+/*cambio de color del botón de venta de entradas*/
+.entradas:hover{
+  background-color: darkred;
+}
+/*cambio de color del botón de home*/
+.home:hover{
+  background-color: darkred;
+}
 
 
 
@@ -78,15 +103,22 @@ input:hover{
     height: 5rem;
     width: 8rem;
   }
-  .home{height: 5rem;
-    width: 8rem; }
-    img { height: 40%;
-      width: 40%}
-      input {
+  .home{
+    height: 5rem;
+    width: 8rem; 
+  }
+  img { 
+    height: 40%;
+    width: 40%
+  }
+   input {
         height: 3rem;
-        width: 7rem;
-      }   
-      }
+        width: 7rem; 
+      } 
+    body{
+      background-size: cover;
+    }
+ }
 
 @media screen and (max-width: 680px) {
 
@@ -95,7 +127,8 @@ input:hover{
         height: 5rem;
         width: 5rem;
   }
-  .home{height: 5rem;
+  .home{
+    height: 5rem;
     width: 5rem; }
 
   input {
@@ -104,28 +137,40 @@ input:hover{
     font-size: 0.6rem;
 
   }
-    img { height: 50%;
+    img { 
+      height: 50%;
       width: 50%;
-}
+  }
+  body{
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 500px) {
  
 
-.entradas { height: 2.8rem;
+.entradas { 
+  height: 2.8rem;
   width: 4rem;
 }
-.home{height: 2.9rem;
-width: 4rem; }
-img { height: 40%;
-width: 40%;
+
+.home{
+  height: 2.9rem;
+  width: 4rem;
+ }
+
+img {
+   height: 40%;
+   width: 40%;
 }
 input {
   height: 1rem;
   width: 3rem;
   font-size: 0.5rem;
 }
-
+body{
+  background-size: cover;
+}
 }     
            
 
