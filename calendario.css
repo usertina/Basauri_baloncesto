@@ -8,78 +8,92 @@ body{
 
 /*div 1*/
 .entrada_1 {
-  align-items: center;
-  display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  display: flex;
 }
 /*div 2*/
 .entrada_2 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 3*/
 .entrada_3 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 4*/
 .entrada_4 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 5*/
 .entrada_5 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 6*/
 .entrada_6 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 7*/
 .entrada_7 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*div 8*/
 .entrada_8 {
   align-items: center;
-  display: flex;
   justify-content: center;
+  display: flex;
+  margin-top: 1rem;
 }
 /*imagenes de las entradas*/
 .image{width: 40rem;
   height: 8rem;
 }
 
-/*boton home*/
-.home {
-  background-color: #DA121A;
-  width: 8rem; 
-  height: 8rem;
-        }
-/*boton entradas*/
-.entradas {
-   background-color: #DA121A;
-  width: 8rem; 
-  height: 8rem;
 
-        }
  /*boton que enlaza a página de venta de entradas y al home y cambia la forma de cursor*/       
 input{
   background-color: #DA121A;
   color: white;
   border: none;
   cursor: pointer;
+  
 }
+.home{
+  width: rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  
+  background-color: #DA121A;
+}
+.entradas{
+  width: rem;
+  height: 8rem;
+  box-sizing: border-box;
+  display: block;
+  background-color: #DA121A;
+}
+
+
+
+
 /*cambio de color del botón que enlaza a la página de venta de entradas y al home*/
 input:hover{
   background-color: darkred;
