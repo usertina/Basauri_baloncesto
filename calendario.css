@@ -1,57 +1,66 @@
-
+/*div 1*/
 .entrada_1 {
   align-items: center;
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
+/*div 2*/
 .entrada_2 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*div 3*/
 .entrada_3 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*div 4*/
 .entrada_4 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*div 5*/
 .entrada_5 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*div 6*/
 .entrada_6 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*div 7*/
 .entrada_7 {
   align-items: center;
   display: flex;
   justify-content: center;
 }
+/*boton home*/
 .home {
   background-color: #DA121A;
   width: 8rem; 
   height: 10.5rem;
         }
-
+/*boton entradas*/
 .entradas {
    background-color: #DA121A;
   width: 8rem; 
   height: 10.5rem;
         }
+ /*boton que enlaza a página de venta de entradas y al home*/       
 input{
   background-color: #DA121A;
   color: white;
   border: none;
   cursor: pointer;
 }
+/*cambio de color del botón que enlaza a la página de venta de entradas y al home*/
 input:hover{
   background-color: darkred;
 }
