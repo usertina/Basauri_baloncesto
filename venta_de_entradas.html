@@ -9,6 +9,8 @@
   <script src="https://kit.fontawesome.com/0cab5e247d.js" crossorigin="anonymous"></script>
   
 </head>
+
+<body>
 <nav>
   <div class="logo_nav">
       <img src="logo.png" alt="">
@@ -42,7 +44,7 @@
 
 </nav>
 
-<body>
+
   <article class="section-flexible">
     <!-- Disposicion del Estadio-->
 <section class="section-images">
@@ -61,8 +63,8 @@
   
 </section>
 <!-- Form-->
-<section class="form">
-  <table id="miTabla">
+<section>
+  <table>
     <thead>
       <tr>
         <th>Zona</th>
@@ -72,24 +74,34 @@
     <tbody>
       <tr >
         <td ><label for="der">Zona Derecha</label></td>
-        <td><input id="der" type="radio" name="precio"><label for="der">$10</label></td>
+        <td><input id="der" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="der">$10</label></td>
       </tr>
       <tr>
         <td><label for="izq">Zona Izquierda</label></td>
-        <td><input id="izq" type="radio" name="precio"><label for="izq">$10</td>
+        <td><input id="izq" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="izq">$10</td>
       </tr>
       <tr>
         <td><label for="sup">Zona Superior</label></td>
-        <td><input id="sup" type="radio" name="precio"><label for="sup">$20</td>
+        <td><input id="sup" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="sup">$20</td>
       </tr>
       <tr>
         <td><label for="inf">Zona Inferior</label></td>
-        <td><input id="inf" type="radio" name="precio"><label for="inf">$30</td>
+        <td><input id="inf" type="radio" name="precio" onclick="scrollToSection('section-pago')"><label for="inf">$30</td>
       </tr>
       
     </tbody>
   </table>
-  <fieldset>
+  </section>
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</article>
+  <section id="section-pago"> 
 <form id="Form-Pago" action="#" method="get">
   <label for="fecha"> Seleccione la fecha <input type="date"> </label>
   <label for="tipo"> Tipo de Entradas 
@@ -99,13 +111,13 @@
       <option value="2" > Regular</option>
     </select> </label>
   <label for="cantidad"> Cantidad <input type="number" min="1" max="10"> </label>
-  <input id="submit" type="submit" value="Reserva el ticket">
+  <input id="submit" type="submit" value="Continuar">
 </form>
-</fieldset>
+
 </section>
-</article>
+
   
-</body>
+
 
 <footer>
   <div class="marquee-infinite">
@@ -137,4 +149,5 @@
   <div class="footer-logo"><img src="img/Logo black.png" alt=""></div>
 </div>
 </footer>
+</body>
 </html>
