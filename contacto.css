@@ -6,14 +6,13 @@ h1{
 }
 
 
-
 .container {
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
+    padding: 5rem;
+    padding-bottom: 8rem;
     background-color:  rgb(20, 20, 20);
 }
 
@@ -21,7 +20,6 @@ h1{
 
 form {
     width: 50rem;
-    padding: 2rem;
 }
 
 label {
@@ -60,7 +58,7 @@ button:hover {
 }
 
 .dos { 
-    background-color: rgb(20, 20, 20);
+    background-color:  rgb(20, 20, 20);
     color: white;
 }
 
@@ -68,6 +66,8 @@ button:hover {
 p { 
     text-align: left;
     font-size: 1.1rem;
+    margin-left: 6rem;
+    font-weight: 500;
 }
 
 h2 {
@@ -76,16 +76,12 @@ h2 {
 }
 
 
-.informacion { 
-    margin-left: 6rem;
 
-}
 
-.mapa { 
-
-    padding: 6rem;  
-    
-}
+iframe { 
+    padding: 10%;
+    width: 40rem;
+    height: 40rem;}
 
 
 @media screen and (max-width: 1000px){
@@ -94,28 +90,32 @@ h2 {
 
 /* Media-Queries */
 @media screen and (max-width: 768px) {
-    form {width: 35%;
-        height: 35%; }
+    form {width: 90%;
+        height: 90%; }
+    textarea {width: 69%;}
 
+    iframe { width: 80%;
+        height: 80%;}
 }
 
 @media screen and (max-width: 600px) {
-    form {width: 30%;
-        height: 30%;}
+    form {width: 75%;
+        height: 75%;}
+    textarea {width: 10rem;}
 
-    img { width: 90%;
-          height: 90%;}
+    iframe { width: 80%;
+          height: 70%;}
     
 }
 
 @media screen and (max-width: 500px) {
-    form {width: 30%;
-            height: 30%; 
+    form {width: 90%;
+            height: 90%; 
 }
 
 p { font-size: 1.2rem;}
 
-    img { height: 75%;
+    iframe { height: 75%;
         width: 75%;
 }
 
