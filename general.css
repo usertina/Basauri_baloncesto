@@ -232,11 +232,7 @@
       .topnav .icon {
         display: none;
       }
-      
-      
-      
-      
-      #i { fontsize: 3rem;
+      #i { font-size: 3rem;
             color: white;
             background-color: pink;
               font-size: 17px;
