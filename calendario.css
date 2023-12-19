@@ -3,6 +3,7 @@ body{
   background-image:url(https://images7.alphacoders.com/654/654785.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 
@@ -91,9 +92,6 @@ input{
   background-color: #DA121A;
 }
 
-
-
-
 /*cambio de color del botón que enlaza a la página de venta de entradas y al home*/
 input:hover{
   background-color: darkred;
@@ -110,81 +108,26 @@ input:hover{
 
 
   /* Media-Queries */
-@media screen and (max-width: 1000px) {
 
-
-  .entradas{
-    height: 5rem;
-    width: 8rem;
-  }
-  .home{
-    height: 5rem;
-    width: 8rem; 
-  }
-  img { 
-    height: 40%;
-    width: 40%
-  }
-   input {
-        height: 3rem;
-        width: 7rem; 
-      } 
-    body{
-      background-size: cover;
+  @media only screen and (max-width: 750px) {
+    .image {
+      width: 75%;
     }
- }
-
-@media screen and (max-width: 680px) {
-
-
-  .entradas {
-        height: 5rem;
-        width: 5rem;
+  
+    .home,
+    .entradas {
+      width: 15%;
+    }
   }
-  .home{
-    height: 5rem;
-    width: 5rem; }
-
-  input {
-    height: 2.5rem;
-    width: 3.5rem;
-    font-size: 0.6rem;
-
-  }
-    img { 
-      height: 50%;
-      width: 50%;
-  }
-  body{
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 500px) {
- 
-
-.entradas { 
-  height: 2.8rem;
-  width: 4rem;
-}
-
-.home{
-  height: 2.9rem;
-  width: 4rem;
- }
-
-img {
-   height: 40%;
-   width: 40%;
-}
-input {
-  height: 1rem;
-  width: 3rem;
-  font-size: 0.5rem;
-}
-body{
-  background-size: cover;
-}
-}     
-           
-
+  
+  
+  @media only screen and (max-width: 500px) {
+    .image {
+      width: 75%;
+    }
+  
+    .home,
+    .entradas {
+      width: 15%;
+    }
+  } 
