@@ -70,6 +70,7 @@
         background-image: url(img_inicio/section.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         height: 70vh;
         width: 100%;
         display: flex;
@@ -170,11 +171,6 @@
         flex-direction: column;
         gap: 2rem;
 
-    }
-
-    .equipo-text,
-    .eventos-text {
-        width: 30%;
     }
 
     .noticia {
@@ -440,5 +436,11 @@
             .marquee-infinite div {
                 width: 500%;
             }
+        }
+        .noticias-text,
+        .history-text,
+        .equipo-text,
+        .eventos-text {
+            width: 80%;
         }
     }
