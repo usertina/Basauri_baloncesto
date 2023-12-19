@@ -91,7 +91,6 @@
         text-transform: uppercase;
         color: white;
         margin-top: 2rem;
-        margin-right: 0.5rem;
     }
 
     .red {
@@ -132,7 +131,6 @@
         padding: 5rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
     }
 
     .equipo-cartas {
@@ -201,6 +199,11 @@
         justify-content: center;
     }
 
+    .butn .red {
+        align-self: center;
+        justify-self: center;
+    }
+
 
     /* .body {
         height: 600px;
@@ -212,6 +215,7 @@
         justify-items: center;
     }
     */
+    
     .body {
         height: 600px;
         margin: 0;
