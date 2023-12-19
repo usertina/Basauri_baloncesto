@@ -43,6 +43,28 @@
 
     /* Principal code */
 
+ /* Botones */
+    .red,
+    .white {
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+        font-size: var(--boton-escr);
+        text-transform: uppercase;
+        color: white;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .red {
+        background-color: var(--red);
+        border: 0.15rem solid var(--red);
+    }
+
+    .white {
+        background-color: transparent;
+        border: 0.15rem solid white;
+    }
+
     /* Footer */
     footer {
         display: flex;
