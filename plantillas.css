@@ -23,7 +23,7 @@ main{display:flex;
                      align-items: center;
                      flex-direction: row;
                      margin-top: 3rem;
-                     margin-bottom: 2rem;
+                     margin-bottom: 2.1rem;
                      }
 /*div contenedor de imagen + nombre y posicion entrendores*/
 .plantilla_nombre_entrenadores{display: flex;
