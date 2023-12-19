@@ -74,22 +74,25 @@ input{
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
   
 }
 .home{
-  width: rem;
   height: 8rem;
   display: flex;
   align-items: center;
-  
+  padding: 1rem;
   background-color: #DA121A;
+  justify-content: center;
 }
 .entradas{
-  width: rem;
   height: 8rem;
-  box-sizing: border-box;
-  display: block;
+  display: flex;
   background-color: #DA121A;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /*cambio de color del botón que enlaza a la página de venta de entradas y al home*/
@@ -109,9 +112,9 @@ input:hover{
 
   /* Media-Queries */
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 894px) {
     .image {
-      width: 75%;
+      width: 50%;
     }
   
     .home,
@@ -121,13 +124,29 @@ input:hover{
   }
   
   
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 700px) {
     .image {
-      width: 75%;
+      width: 50%;
     }
-  
+  input{
+    font-size: small;
+  }
     .home,
     .entradas {
       width: 15%;
+    }
+  } 
+
+  @media only screen and (max-width: 500px) {
+    .image {
+      width: 70%;
+    }
+  input{
+    transform: rotate(90deg);
+  
+  }
+    .home,
+    .entradas {
+      width: 10%;
     }
   } 
