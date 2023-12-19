@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Inter', sans-serif;
-        text-align: left;
+        text-align: center;
         font-size: 16px;
     }
 
@@ -64,15 +64,14 @@
         border: 0.15rem solid white;
     }
 
-    /* Footer */
-    footer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-size: var(--boton-escr);
-    }
+   /* Footer */
+   footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: var(--boton-escr);
+}
 
-    /*
     .footer-menu,
     .footer-logo {
         background-color: var(--black);
@@ -80,18 +79,19 @@
         width: 100%;
         padding-bottom: 2rem;
     }
-*/
-.footer-logo img {
-    width: 5rem;
-    height: 5rem;
-    border: 0.1rem solid white;
-    border-radius: 100%;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-    /*  .footer-menu {
+
+    .footer-logo img {
+        width: 5rem;
+        height: 5rem;
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-menu {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -99,15 +99,15 @@
         color: white;
         padding-top: 2rem;
     }
-     .footer-menu div {
-        margin: 1rem;
-    } */
 
-    .footer-abajo {
+    .footer-menu div {
+        margin: 1rem;
+    }
+
+    .footer {
         display: flex;
         justify-content: center;
-        background-color: var(--black);
-        padding: 1rem;
+        background-color: var(--gray);
     }
 
     /* Nav */
@@ -192,6 +192,61 @@
     .marquee-infinite img {
         width: 10%;
     }
+    /* hamburguesa de andres */
+
+    .topnav {align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+       
+        display:flex;
+      }
+      
+          #label_boton {display:none;}
+          
+       .ham {position: absolute;
+                top: 2rem;
+                right: 2rem;
+                }
+      .topnav .logo_nav{width: 20%;
+                        height: 20%;}
+      .topnav a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        
+      }
+      
+      .topnav a:hover {
+        
+        color: red;
+      }
+      
+      .topnav a.active {
+        
+        color: white;
+      }
+      
+      .topnav .icon {
+        display: none;
+      }
+      
+      
+      
+      
+      #i { fontsize: 3rem;
+            color: white;
+            background-color: pink;
+              font-size: 17px;
+        background-color: red;
+         padding: 14px 16px;
+         display:none;}
+      
+      #boton_ham {
+      
+      display: none; }
 
     @keyframes marquee-infinite {
         0% {
@@ -203,7 +258,7 @@
         }
     }
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1290px){
         .redes_sociales_nav{display: none;}
         .menu_nav{width: 80%;}
         .logo_nav{width:20%;
@@ -224,8 +279,54 @@
         .marquee-infinite div {
             width: 300%;
         }
+        .topnav a:not(:first-child) {display: none;}
+
+        #boton_ham:checked ~ #myTopnav {display: block;
+                                                   text-align: left;
+      }
+      #i {display: block;}
+      /**/
+      .topnav { 
+      
+        flex-direction: column; 
+      }
+      #home {margin-right: auto;
+        }
+      
+    
+    .topnav a {
+    
+      text-align: center; }
+    
+    #label_boton { position: absolute;
+                    top: 0;
+                     right: 0;
+                     z-index:100;
+                     display:block;
+    
+                   }
 
     }
+    @media screen and (max-width: 768px) {
+
+
+        .topnav.responsive {position: relative;}
+      
+         #boton_ham:checked ~ #myTopnav a {display: block;
+                                           text-align: center;
+        }
+          
+        .topnav.responsive a {
+       
+          display: block;
+          text-align: left;
+        }
+        
+        #home {margin-right: 0;
+          }
+       
+        
+      }
 
     @media screen and (max-width: 650px) {
         nav{justify-content: center;
@@ -239,9 +340,9 @@
                       width: 80%;
                       height: 80%;
                       margin: auto;}
-        .hamburguesa_menu{display: flex;
-                          margin-right: 3rem;
-                        font-size: 3rem;}
+        .hamburguesa_menu{display: none ;
+                          margin-right: 0rem;
+                        font-size: 0rem;}
         
     }
 
