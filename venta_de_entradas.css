@@ -10,12 +10,17 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--gray);
+  
+  
  
 }
 .section-flexible{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 5rem auto;
   
 }
 .estadio-container {
@@ -24,12 +29,10 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 0.5rem;
-  
+    margin: 2rem 5rem;
+    height: 40rem;
 
     
-  }
-  .section-images{
-    margin: 2rem 5rem;
   }
  
   .centro{
@@ -40,8 +43,8 @@ body{
 
   /* Imagen Left */
   .image-Izquierda {
-    width: 6.5rem;
-    height: 14rem;
+    width: 13rem;
+    height: 28rem;
     background-size: cover;
     transition: background-image 0.3s ease; /* Efecto de transición suave */
     border-radius: 5%;
@@ -54,12 +57,12 @@ body{
   /* Change the background image on hover */
   .image-Izquierda:hover {
     background-image: url('img_Estadio/Izquierda.png');
-    transform: scale(1.6);
+    transform: scale(1.5);
   }
   /* Imagen Right */
   .image-Derecha {
-    width:6.5rem;
-    height:14rem;
+    width:13rem;
+    height:28rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
     border-radius: 5%;
@@ -69,12 +72,12 @@ body{
   
   .image-Derecha:hover {
     background-image: url(img_Estadio/Derecha.png);
-    transform: scale(1.6);
+    transform: scale(1.5);
   }
   /* Imagen Top */
   .image-Centro-Arriba {
-    width:12rem;
-    height: 6.5rem;
+    width:24rem;
+    height: 13rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
     border-radius: 5%;
@@ -83,14 +86,14 @@ body{
   
   .image-Centro-Arriba:hover {
     background-image: url(img_Estadio/Centro_Arriba.png);
-    transform: scale(1.6);
+    transform: scale(1.5);
   }
 
 
    /* Imagen Bottom */
   .image-Centro-Abajo {
-    width:12rem;
-    height:6.5rem;
+    width:24rem;
+    height:13rem;
     background-size: cover;
     transition: background-image 0.3s ease; 
     border-radius: 5%;
@@ -99,13 +102,13 @@ body{
   
   .image-Centro-Abajo:hover {
     background-image: url(img_Estadio/Centro_abajo.png);
-    transform: scale(1.6);
+    transform: scale(1.5);
   }
   /* Imagen Centro */
 
   .image-Centro {
-    width: 12rem;
-    height: 6.5rem;
+    width: 24rem;
+    height: 13rem;
     background-size: cover;
     border-radius: 5%;
     background-image: url(img_Estadio/Center.png) ; 
@@ -118,8 +121,10 @@ table {
   color: var(--gray);
   border-collapse: collapse;
   overflow: hidden;
-  min-width: 30vh;
-  margin: 2rem 5rem ;
+  max-width: 35rem;
+  min-width: 20rem;
+  min-height: 18rem;
+  margin:10rem 5rem;
   border-radius: 5%;
   box-shadow:0 0 10px rgba(117, 117, 117, 0.1);
  
@@ -143,14 +148,12 @@ table tr:hover {
 }
 
 
-
-
 form{
   background-color:var(--black);
   margin:10rem auto;
-  max-width: 30rem;
-  min-width: 18rem;
-  width: 50%;
+  max-width: 35rem;
+  min-width: 20rem;
+  min-height: 18rem;
   padding: 2rem;
   border-radius: 5%;
 }
@@ -166,13 +169,78 @@ input,textarea,select{
   
 }
 
+input[type="submit"]{
+  background-color: #4CAF50;
+  color: white; 
+  padding: 10px 20px;
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; 
+}
 /* Media-Queries */
+
+@media screen and (max-width: 1000px){
+  .section-images{
+    width: 50%;
+  }
+  form {
+    width: 50%;
+  }
+  .image-Derecha {
+    width:6.5rem;
+    height:14rem;
+  }
+  .image-Izquierda {
+    width: 6.5rem;
+    height: 14rem;
+  }
+  .image-Centro-Arriba {
+    width:12rem;
+    height: 6.5rem;
+  }
+  .image-Centro-Abajo {
+    width:12rem;
+    height:6.5rem;
+  }
+  .image-Centro {
+    width: 12rem;
+    height: 6.5rem;
+  }
+
+}
+  
 @media screen and (max-width: 768px) {
   .section-images{
     width: 50%;
   }
   form {
     width: 50%;
+  }
+
+  .image-Derecha {
+    width:6.5rem;
+    height:14rem;
+  }
+  .image-Izquierda {
+    width: 6.5rem;
+    height: 14rem;
+  }
+  .image-Centro-Arriba {
+    width:12rem;
+    height: 6.5rem;
+  }
+  .image-Centro-Abajo {
+    width:12rem;
+    height:6.5rem;
+  }
+  .image-Centro {
+    width: 12rem;
+    height: 6.5rem;
   }
 
 }
@@ -184,7 +252,26 @@ input,textarea,select{
   form {
     width: 70%;
   }
-  
+  .image-Derecha {
+    width:3.75rem;
+    height:7rem;
+  }
+  .image-Izquierda {
+    width: 3.75rem;
+    height: 7rem;
+  }
+  .image-Centro-Arriba {
+    width:6rem;
+    height: 3.75rem;
+  }
+  .image-Centro-Abajo {
+    width:6rem;
+    height:3.75rem;
+  }
+  .image-Centro {
+    width: 6rem;
+    height: 3.75rem;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -193,6 +280,26 @@ input,textarea,select{
   }
   form {
     width: 80%;
+  }
+  .image-Derecha {
+    width:2rem;
+    height:3.5rem;
+  }
+  .image-Izquierda {
+    width: 2rem;
+    height: 3.5rem;
+  }
+  .image-Centro-Arriba {
+    width:3rem;
+    height: 2rem;
+  }
+  .image-Centro-Abajo {
+    width:3rem;
+    height:2rem;
+  }
+  .image-Centro {
+    width: 3rem;
+    height: 2rem;
   }
 
 }

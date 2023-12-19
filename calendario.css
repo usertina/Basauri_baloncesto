@@ -3,6 +3,7 @@ body{
   background-image:url(https://images7.alphacoders.com/654/654785.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 
@@ -73,26 +74,26 @@ input{
   color: white;
   border: none;
   cursor: pointer;
+  text-align: center;
   
 }
 .home{
-  width: rem;
   height: 8rem;
   display: flex;
   align-items: center;
-  
+  padding: 1rem;
   background-color: #DA121A;
+  justify-content: center;
 }
 .entradas{
-  width: rem;
   height: 8rem;
-  box-sizing: border-box;
-  display: block;
+  display: flex;
   background-color: #DA121A;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  
 }
-
-
-
 
 /*cambio de color del botón que enlaza a la página de venta de entradas y al home*/
 input:hover{
@@ -110,81 +111,42 @@ input:hover{
 
 
   /* Media-Queries */
-@media screen and (max-width: 1000px) {
 
-
-  .entradas{
-    height: 5rem;
-    width: 8rem;
-  }
-  .home{
-    height: 5rem;
-    width: 8rem; 
-  }
-  img { 
-    height: 40%;
-    width: 40%
-  }
-   input {
-        height: 3rem;
-        width: 7rem; 
-      } 
-    body{
-      background-size: cover;
-    }
- }
-
-@media screen and (max-width: 680px) {
-
-
-  .entradas {
-        height: 5rem;
-        width: 5rem;
-  }
-  .home{
-    height: 5rem;
-    width: 5rem; }
-
-  input {
-    height: 2.5rem;
-    width: 3.5rem;
-    font-size: 0.6rem;
-
-  }
-    img { 
-      height: 50%;
+  @media only screen and (max-width: 894px) {
+    .image {
       width: 50%;
+    }
+  
+    .home,
+    .entradas {
+      width: 15%;
+    }
   }
-  body{
-    background-size: cover;
+  
+  
+  @media only screen and (max-width: 700px) {
+    .image {
+      width: 50%;
+    }
+  input{
+    font-size: small;
   }
-}
+    .home,
+    .entradas {
+      width: 15%;
+    }
+  } 
 
-@media screen and (max-width: 500px) {
- 
-
-.entradas { 
-  height: 2.8rem;
-  width: 4rem;
-}
-
-.home{
-  height: 2.9rem;
-  width: 4rem;
- }
-
-img {
-   height: 40%;
-   width: 40%;
-}
-input {
-  height: 1rem;
-  width: 3rem;
-  font-size: 0.5rem;
-}
-body{
-  background-size: cover;
-}
-}     
-           
-
+  @media only screen and (max-width: 500px) {
+    .image {
+      width: 70%;
+    }
+  input{
+    transform: rotate(90deg);
+  
+  }
+    .home,
+    .entradas {
+      width: 10%;
+    }
+  } 

@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Inter', sans-serif;
-        text-align: left;
+        text-align: center;
         font-size: 16px;
     }
 
@@ -73,45 +73,44 @@
     font-size: var(--boton-escr);
 }
 
-/*
-.footer-menu,
-.footer-logo {
-    background-color: var(--black);
-    font-weight: bold;
-    width: 100%;
-    padding-bottom: 2rem;
-}
-*/
-.footer-logo img {
-width: 5rem;
-height: 5rem;
-border: 0.1rem solid white;
-border-radius: 100%;
-padding: 0.5rem;
-margin-top: 1rem;
-justify-content: center;
-align-items: center;
-}
-/*  .footer-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: white;
-    padding-top: 2rem;
-}
- .footer-menu div {
-    margin: 1rem;
-} */
+    .footer-menu,
+    .footer-logo {
+        background-color: var(--black);
+        font-weight: bold;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
 
-.footer-abajo {
-    display: flex;
-    justify-content: center;
-    background-color: var(--black);
-    padding: 1rem;
-}
+    .footer-logo img {
+        width: 5rem;
+        height: 5rem;
+        border: 0.1rem solid white;
+        border-radius: 100%;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
 
-    
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: white;
+        padding-top: 2rem;
+    }
+
+    .footer-menu div {
+        margin: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: var(--gray);
+    }
+
     /* Nav */
     nav {
         background-color: rgb(0, 0, 0);
@@ -137,7 +136,6 @@ align-items: center;
         rotate: 2.80;
         border: 0.1rem solid rgb(255, 255, 255);
         border-radius: 100%;
-        padding: 0.5rem;
     }
 
     .menu_nav {
@@ -244,7 +242,6 @@ align-items: center;
             background-color: pink;
               font-size: 17px;
         background-color: red;
-        font-size: 17px;
          padding: 14px 16px;
          display:none;}
       
