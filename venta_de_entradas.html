@@ -12,30 +12,37 @@
 
 
 <nav>
-  <div class="logo_nav">
-      <img src="logo.png" alt="">
-
-  </div>
-  <div class="menu_nav">
-      <ul>
-          <li>PLANTILLA</li>
-          <li>CALENDARIO</li>
-          <li>ENTRADAS</li>
-          <li>CONTACTO</li>
-      </ul>
+  <label id="label_boton"for="boton_ham"> <i id="i" class="fa fa-bars"></i></label> 
+  <input id="boton_ham" type="checkbox" value="si">
+  <div class="topnav" id="myTopnav">
+    <div class="logo_nav">
+     <a id="home" href="/index.html" class="active"> 
+      <img src="img/Logo black.png"alt="" >
+     </a>
+   </div>
+      
+          <a href="/plantillas.html">PLANTILLA</a>
+          <a href="/calendario.html">CALENDARIO</a>
+          <a href="/venta_de_entradas.html">ENTRADAS</a>
+          <a href="/contacto.html">CONTACTO</a>
+      
+    <!--  <a  href="javascript:void(0);" class="icon ham" onclick="myFunction()">
+          <i class="fa fa-bars"></i>-->
+      </a>
+      
 
   </div>
   <div class="redes_sociales_nav">
       <ul>
-          <li><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></li>
+          <li><i> <a href="http://www.tiktok.com/es/" class="fa-brands fa-tiktok" style="color: #ffffff;"></a></i></li>
          
-          <li><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
+          <li><i> <a href="https://www.facebook.com/?locale=es_ES" class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
          
-          <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+          <li><i> <a href="https://www.instagram.com/" class="fa-brands fa-instagram" style="color: #ffffff;"></a></i></li>
          
-          <li><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></li>
+          <li><i> <a href="https://twitter.com/?lang=es" class="fa-brands fa-x-twitter" style="color: #ffffff;"></a></i></li>
         
-          <li><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>         
+          <li><i> <a href="https://www.youtube.com/" class="fa-brands fa-youtube" style="color: #ffffff;"></a></i></li>         
       </ul>
   </div>
   <div class="hamburguesa_menu">
@@ -140,15 +147,18 @@
       </div>
   </div>
 <div class="footer-abajo">
-  <div class="footer-menu">
+<!--   <div class="footer-menu">
       <div>INICIO</div>
       <div>HORARIO</div>
       <div>ENTRADAS</div>
       <div>PLANTILLAS</div>
       <div>TIENDA</div>
+  </div>-->
+  <div class="footer-logo">
+      <img src="img/Logo black.png" alt="">
   </div>
-  <div class="footer-logo"><img src="img/Logo black.png" alt=""></div>
 </div>
+
 </footer>
 
 </html>
