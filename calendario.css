@@ -117,7 +117,9 @@ input:hover{
       width: 50%;
     }
   
-    .home,
+    .home{
+      width: 10%;
+    }
     .entradas {
       width: 15%;
     }
@@ -131,7 +133,9 @@ input:hover{
   input{
     font-size: small;
   }
-    .home,
+    .home{
+      width:10% ;
+    }
     .entradas {
       width: 15%;
     }
