@@ -160,9 +160,9 @@
     .noticias {
         padding: 5rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
-        align-items: self-start;
+        align-items: center;
     }
 
     .noticias-cartas {
