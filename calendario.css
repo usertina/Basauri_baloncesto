@@ -13,55 +13,14 @@ body{
   margin-top: 1.5rem;
   display: flex;
 }
-/*div 2*/
+/*div 2,3,4,5,6,7,8*/
 .entrada_2 {
   align-items: center;
   justify-content: center;
   display: flex;
   margin-top: 1rem;
 }
-/*div 3*/
-.entrada_3 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
-/*div 4*/
-.entrada_4 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
-/*div 5*/
-.entrada_5 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
-/*div 6*/
-.entrada_6 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
-/*div 7*/
-.entrada_7 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
-/*div 8*/
-.entrada_8 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 1rem;
-}
+
 /*imagenes de las entradas*/
 .image{width: 40rem;
   height: 8rem;
