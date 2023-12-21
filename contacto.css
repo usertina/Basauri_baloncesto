@@ -14,6 +14,7 @@ main { background-image: url(img/canchatina.webp);
 .container {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 1rem;
@@ -92,6 +93,11 @@ p {
 
 @media screen and (max-width: 1000px){
 
+    .section {width: 40%;
+             height: 40%;}
+             
+    .mapa {width: 40%;
+        height: 40%;}
 }
 
 /* Media-Queries */
@@ -103,6 +109,9 @@ p {
 
     iframe {width: 80%;
             height: 80%;}
+
+    .mapa {width: 60%;
+           height: 60%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -113,6 +122,9 @@ p {
 
     iframe { width: 80%;
           height: 70%;}
+
+    .mapa {width: 60%;
+            height: 60%;}
     
 }
 
@@ -122,6 +134,13 @@ p {
 
     p {font-size: 1.2rem;}
 
-    iframe {height: 75%;
-            width: 75%;}
+    iframe {height: 50%;
+            width: 50%;}
+
+    .informacion {
+        height:90%;
+        width: 90%;}
+
+    .mapa {width: 60%;
+            height: 60%;}
 }
