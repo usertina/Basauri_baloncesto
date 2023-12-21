@@ -1,7 +1,6 @@
 
 h1{
     color: white;
-    text-align: center;
     font-size: 3rem;
 }
 
@@ -15,15 +14,27 @@ main { background-image: url(img/canchatina.webp);
 .container {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
-    padding-bottom: 8rem;
+    padding-top: 1rem;
 }
 
 form {
+    border: 0.3rem solid white;
+    border-radius: 3rem;
     width: 50rem;
     font-weight: 600;
+    margin-block: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mapa {
+    padding-left: 10rem;
+    padding-top: 5rem;
 
 }
 
@@ -40,12 +51,14 @@ input {
     padding: 0.6rem;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    opacity: 0.5;
 }
 
 textarea {
     padding: 4rem;
     width: 84%;
     margin-bottom: 1rem;
+    opacity: 0.5;
 }
 
 button {
@@ -61,35 +74,30 @@ button:hover {
     background-color: #ac0b0b;
 }
 
-.dos {
+.informacion {
     color: white;
-
-}
-
-p { 
-    text-align: left;
-    font-size: 1.1rem;
-    margin-left: 6rem;
-    font-weight: 600;
 }
 
 h2 {
+    margin-top: rem;
     color: white;
     font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
-
-
-
-iframe { 
-    padding: 10%;
-    width: 40rem;
-    height: 40rem;
+p {
+    font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 
 @media screen and (max-width: 1000px){
 
+    .section {width: 40%;
+             height: 40%;}
+             
+    .mapa {width: 40%;
+        height: 40%;}
 }
 
 /* Media-Queries */
@@ -101,6 +109,9 @@ iframe {
 
     iframe {width: 80%;
             height: 80%;}
+
+    .mapa {width: 60%;
+           height: 60%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -111,6 +122,9 @@ iframe {
 
     iframe { width: 80%;
           height: 70%;}
+
+    .mapa {width: 60%;
+            height: 60%;}
     
 }
 
@@ -120,6 +134,13 @@ iframe {
 
     p {font-size: 1.2rem;}
 
-    iframe {height: 75%;
-            width: 75%;}
+    iframe {height: 50%;
+            width: 50%;}
+
+    .informacion {
+        height:90%;
+        width: 90%;}
+
+    .mapa {width: 60%;
+            height: 60%;}
 }
