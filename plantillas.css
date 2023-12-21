@@ -75,9 +75,13 @@ main{display:flex;
                 }
 /* Boton de subir */
 
-.red{margin-bottom: 5rem;
 
-}
+.red{background-color: #ac0b0b;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+      }
+.red img{width: 1rem;}
 
 /*Efectos de agrandacion a la hora de poner el cursor*/
 
