@@ -16,7 +16,7 @@ main { background-image: url(img/canchatina.webp);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 1rem;
 }
 
@@ -33,8 +33,11 @@ form {
 }
 
 .mapa {
-    padding-left: 10rem;
-    padding-top: 5rem;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 8rem;
 
 }
 
@@ -74,8 +77,10 @@ button:hover {
     background-color: #ac0b0b;
 }
 
-.informacion {
+.informacion{
     color: white;
+    margin-bottom: 10rem;
+    
 }
 
 h2 {
@@ -91,27 +96,30 @@ p {
 }
 
 
-@media screen and (max-width: 1000px){
 
-    .section {width: 40%;
-             height: 40%;}
-             
-    .mapa {width: 40%;
-        height: 40%;}
-}
 
 /* Media-Queries */
-@media screen and (max-width: 768px) {
-    form {width: 90%;
-        height: 90%; }
+@media screen and (max-width: 900px) {
+    form {width: 80%;
+        height: 80%; }
         
     textarea {width: 69%;}
 
-    iframe {width: 80%;
-            height: 80%;}
+    .mapa {width: 50%;
+            height: 50%;
+            }
 
-    .mapa {width: 60%;
-           height: 60%;}
+}
+@media screen and (max-width: 768px) {
+    form {width: 80%;
+        height: 80%; }
+        
+    textarea {width: 69%;}
+
+    .mapa {width: 70%;
+            height: 10%;
+           }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -120,15 +128,13 @@ p {
 
     textarea {width: 10rem;}
 
-    iframe { width: 80%;
-          height: 70%;}
-
-    .mapa {width: 60%;
-            height: 60%;}
+    .mapa{ width: 50%;
+          height: 50%;
+        margin-right: 5rem;}
     
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 540px) {
     form {width: 90%;
           height: 90%;}
 
@@ -138,9 +144,7 @@ p {
             width: 50%;}
 
     .informacion {
-        height:90%;
-        width: 90%;}
+        height:70%;
+        width: 70%;}
 
-    .mapa {width: 60%;
-            height: 60%;}
-}
+} */
