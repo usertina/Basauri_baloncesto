@@ -342,7 +342,10 @@
     input:nth-of-type(5):checked~div#carousel {
         --position: 5;
     }
-
+    .red:hover {
+        background-color: #ac0b0b;
+        border-color: #ac0b0b;
+    }
 
 
     /* Media-Queries */
