@@ -78,20 +78,21 @@
         background-color: var(--black);
         font-weight: bold;
         width: 100%;
-        padding-bottom: 2rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .footer-logo img {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
         border: 0.1rem solid white;
         border-radius: 100%;
         padding: 0.5rem;
         margin-top: 1rem;
         justify-content: center;
-        align-items: center;
     }
 
     .footer-menu {
@@ -107,10 +108,52 @@
         margin: 1rem;
     }
 
-    .footer {
+    .footer-abajo {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         background-color: var(--gray);
+        color: white;
+        font-weight: lighter;
+    }
+
+    .footer-abajo p {
+        text-align: center;
+        font-weight: normal;
+    }
+    .footer-texto {
+        padding: 2rem;
+    }
+
+    [data-title] {
+        position: relative;
+        /* Относительное позиционирование */
+        cursor: help;
+        /* Меняем курсор на справочный */
+    }
+
+    [data-title]::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        bottom: 2rem;
+        left: -10rem;
+        opacity: 0;
+        transition: 0.5s;
+        pointer-events: none;
+        background: white;
+        color: var(--black);
+        padding: 0.5em;
+        font-size: var(--text-tab);
+        width: 30rem;
+        border: 0.1rem solid var(--black);
+        border-radius: 0.2rem;
+    }
+
+    [data-title]:hover::after {
+        opacity: 1;
+        /* Показываем подсказку */
     }
 
     /* Nav */
