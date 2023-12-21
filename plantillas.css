@@ -5,7 +5,7 @@ main{display:flex;
      background-image: url(/vertical_2_prueba.png);
      background-repeat:repeat-y;
      background-size: 100%;
-     margin-bottom: 5rem;
+   /*  margin-bottom: 5rem;*/
      align-items: center;
     }
 /*div de contenedor de los 2 entrenadores*/
@@ -13,7 +13,7 @@ main{display:flex;
                      justify-content: space-around;
                      width: 100%;
                      flex-direction: row;
-                     margin-top: 3rem;
+                    /* margin-top: 3rem;*/
                      }
 /*div de contenedor de todos los jugadores*/
 .plantilla_jugadores{display: flex;
@@ -23,7 +23,7 @@ main{display:flex;
                      align-items: center;
                      flex-direction: row;
                      margin-top: 3rem;
-                     margin-bottom: 2.1rem;
+                    /* margin-bottom: 2.1rem;*/
                      }
 /*div contenedor de imagen + nombre y posicion entrendores*/
 .plantilla_nombre_entrenadores{display: flex;
@@ -77,11 +77,12 @@ main{display:flex;
 
 
 .red{background-color: #ac0b0b;
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 3rem;
-      }
-.red img{width: 1rem;}
+     color: white;
+     font-size: 1rem;
+     margin-bottom: 3rem;
+    }
+.red img{width: 1rem;
+        }
 
 /*Efectos de agrandacion a la hora de poner el cursor*/
 
