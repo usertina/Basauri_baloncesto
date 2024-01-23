@@ -101,15 +101,28 @@ input:hover{
   } 
 
   @media only screen and (max-width: 500px) {
-    .image {
-      width: 70%;
-    }
-  input{
-    transform: rotate(90deg);
+    /* Ajustes adicionales para dispositivos móviles */
   
-  }
+    .entrada_1,
+    .entrada_2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .image {
+      width: 100%; /* O ajusta según tus necesidades */
+      height: auto;
+    }
+  
     .home,
     .entradas {
-      width: 10%;
+      width: 100%; /* O ajusta según tus necesidades */
+
     }
-  } 
+  
+    input {
+      font-size: smaller; /* Ajusta según tus necesidades */
+      transform: none; /* Elimina la rotación si es necesario */
+    }
+  }
