@@ -447,7 +447,7 @@
 
     @media screen and (max-width: 380px) {
         footer {
-            width: 100%;
+            width: 90%;
             font-size: var(--boton-mov);
             
         }
@@ -456,7 +456,7 @@
             }
 
             .marquee-infinite div {
-                width: 100%;
+                width: 90%;
             }
             .footer-abajo{width: 90%;
                          }
