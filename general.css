@@ -220,7 +220,7 @@
     }
 
     /* Patrocinadores animation */
-    .marquee-infinite div {
+    /* .marquee-infinite div {
         display: flex;
         width: 80%;
         animation: marquee-infinite 9s linear infinite;
@@ -244,7 +244,7 @@
     }
 
     /* hamburguesa de andres */
-
+ */
     .topnav {
         align-items: center;
         justify-content: space-around;
