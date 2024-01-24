@@ -116,6 +116,7 @@
         background-color: var(--gray);
         color: white;
         font-weight: lighter;
+        width: 100%;
     }
 
     .footer-abajo p {
@@ -131,6 +132,8 @@
         /* Относительное позиционирование */
         cursor: help;
         /* Меняем курсор на справочный */
+        justify-content: center;
+        align-items: center;
     }
 
     [data-title]::after {
@@ -220,7 +223,7 @@
     /* Patrocinadores animation */
     .marquee-infinite div {
         display: flex;
-        width: 200%;
+        width: 100%;
         animation: marquee-infinite 9s linear infinite;
         padding: 1rem;
         white-space: nowrap;
@@ -238,7 +241,7 @@
     }
 
     .marquee-infinite img {
-        width: 10%;
+        width: 100%;
     }
 
     /* hamburguesa de andres */
@@ -335,6 +338,7 @@
     @media screen and (max-width: 768px) {
         footer {
             font-size: var(--boton-tab);
+            width: 100%;
         }
 
         .marquee-infinite img {
@@ -342,7 +346,7 @@
         }
 
         .marquee-infinite div {
-            width: 300%;
+            width: 100%;
         }
 
         .topnav a:not(:first-child) {
@@ -443,15 +447,40 @@
 
     @media screen and (max-width: 380px) {
         footer {
+            width: 100%;
+            font-size: var(--boton-mov);
+            
+        }
             .marquee-infinite img {
                 width: 20%;
             }
 
             .marquee-infinite div {
-                width: 500%;
+                width: 100%;
             }
+            .footer-abajo{width: 90%;
+                         }
+            .aviso{width: 50%;
+                  }
+            [data-title]::after { content: attr(data-title);
+                                  position: absolute;
+                                  left: 0;
+                                  bottom: 2rem;
+                                  
+                                  opacity: 0;
+                                  transition: 0.5s;
+                                  pointer-events: none;
+                                  background: white;
+                                  color: var(--black);
+                                  padding: 0.5em;
+                                  font-size: var(--text-tab);
+                                  width: 10rem;
+                                  border: 0.1rem solid var(--black);
+                                  border-radius: 0.2rem;
+                                  justify-content: center;
+            }
+        }  
 
-            font-size: var(--boton-mov);
-        }
+            
+       
 
-    }

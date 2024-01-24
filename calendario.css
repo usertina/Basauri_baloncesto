@@ -11,6 +11,11 @@ footer {
   background-color: black;
   color: white;
   align-items: center;
+  margin-top: 3rem;
+}
+
+footer img{
+  width: 10%;
 }
 
 
@@ -104,7 +109,7 @@ input:hover{
       transform: none; /* Elimina la rotación si es necesario */
     }
     footer img{
-      width: 30%;
+      width: 10%;
    
       
     }
