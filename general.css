@@ -132,8 +132,7 @@
         /* Относительное позиционирование */
         cursor: help;
         /* Меняем курсор на справочный */
-        justify-content: center;
-        align-items: center;
+        justify-self: unset;
     }
 
     [data-title]::after {
@@ -314,7 +313,7 @@
         }
 
         100% {
-            transform: translateX(0%);
+            transform: translateX(-50%);
         }
     }
 
@@ -338,15 +337,15 @@
     @media screen and (max-width: 768px) {
         footer {
             font-size: var(--boton-tab);
-            width: 90%;
+            width: 100%;
         }
 
         .marquee-infinite img {
-            width: 10%;
+            width: 15%;
         }
 
         .marquee-infinite div {
-            width: 90%;
+            width: 100%;
         }
 
         .topnav a:not(:first-child) {
@@ -447,16 +446,16 @@
 
     @media screen and (max-width: 380px) {
         footer {
-            width: 50%;
+            width: 100%;
             font-size: var(--boton-mov);
             
         }
             .marquee-infinite img {
-                width: 10%;
+                width: 20%;
             }
 
             .marquee-infinite div {
-                width: 50%;
+                width: 100%;
             }
             .footer-abajo{width: 90%;
                          }
@@ -466,7 +465,7 @@
                                   position: absolute;
                                   left: 0;
                                   bottom: 2rem;
-                                  
+                                  left: -10rem;
                                   opacity: 0;
                                   transition: 0.5s;
                                   pointer-events: none;
