@@ -15,9 +15,13 @@ Web estatica para equipo de baloncesto de la localidad de Basauri. Consta de:
 
 * General: información general, historia y noticias del equipo.
 * Plantillas: informacion sobre el equipo y los entrenadores.
+* ![plantilla](https://github.com/usertina/Basauri_baloncesto/assets/124672039/86554f29-fdf6-44dd-aa80-daa8afe2c0ea)
 * Calendario: descripción de las fechas de los próximos partidos con botón de enlace a la página de venta de entradas y al general.
+* ![entradas](https://github.com/usertina/Basauri_baloncesto/assets/124672039/1f1340ea-d20f-4d95-982a-42b9e802740a)
 * Venta de entradas: página dedicada a la venta de las entradas de los partidos con vista de estadio.
+* ![venta](https://github.com/usertina/Basauri_baloncesto/assets/124672039/5a3260b8-823c-46fa-9197-abbb41788bbd)
 * Contacto: espacio dedicado para toma de contacto con la institución y con un mapa de la dirección.
+![contacto](https://github.com/usertina/Basauri_baloncesto/assets/124672039/18707137-148b-47fe-8570-1df48a0fb4dd)
 
 ## Tecnologías utilizadas
 
@@ -41,8 +45,6 @@ https://github.com/usertina/Basauri_baloncesto.git
 
 2. Abra una terminal, selecione la carpeta donde desea clonar el proyecto, después use el comando git clone y pegue la URL al final dejando un espacio.
 3. Finalmente pulse enter. (Tenga en cuenta que debe tener instalado git)
-
-![Imagen git clone](img/git-clone.png) 
 
 ```
 $ git clone https://github.com/usertina/Basauri_baloncesto.git
